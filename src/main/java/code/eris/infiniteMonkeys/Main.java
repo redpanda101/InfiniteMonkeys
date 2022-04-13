@@ -28,6 +28,9 @@ public class Main {
             } catch (NumberFormatException e) {
                 System.err.println(args[0] + " is not an integer! using default delay of 100ms");
                 _delay = defaultDelay;
+            } catch (Exception e) {
+                System.err.println("Using default delay of 100ms");
+                _delay = defaultDelay;
             }
 
             // sets delay to temp delay
